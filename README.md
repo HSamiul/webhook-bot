@@ -1,0 +1,1 @@
+A HTML page for sending webhooks to a Discord server.
