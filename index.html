@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <form>
+            <textarea class="smallForm" id="title" type="text" placeholder="title" autocomplete="off"></textarea>
+            <textarea class="smallForm" id="netChange" type="text" placeholder="net gain/loss" autocomplete="off"></textarea>
+            <textarea class="smallForm" id="time" type="text" placeholder="time" autocomplete="off"></textarea>
+            <textarea class="bigForm"id="oView" placeholder="objective view" autocomplete="off"></textarea>
+            <textarea class="bigForm" id="pView" placeholder="personal view" autocomplete="off"></textarea>
+
+        </form>
+
+        <button class="myButton" onClick="sendWebhook()">Send webhook</button>
+
+    </body>
+    <script src="script.js"></script>
+</html>
