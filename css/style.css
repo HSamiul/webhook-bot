@@ -1,0 +1,19 @@
+.wrapper {
+  min-height: 100vh;
+  min-width: 20vw;
+  max-width: 20vw;
+  background: #00000a;
+  color: #e2e2ff;
+}
+
+ul {
+  list-style: none;
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
+h1 {
+  margin-left: -12rem !important;
+}
+
+/*# sourceMappingURL=style.css.map */
