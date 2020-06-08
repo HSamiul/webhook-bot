@@ -16,9 +16,10 @@ body {
 }
 
 #sidebar {
+  float: left;
   background-color: #ffd2eb;
-  min-width: 300px;
-  max-width: 300px;
+  min-width: 16vw;
+  max-width: 16vw;
   min-height: 100vh;
   -moz-box-shadow: 0px 0px 100px 0px #cfcfcf;
   /*hor-length shadodow-start-point shadow-depth darkness */
@@ -27,6 +28,8 @@ body {
 }
 #sidebar h1 {
   text-align: center;
+  font-size: 6vw;
+  text-shadow: black;
 }
 #sidebar ul {
   padding: 0px;
@@ -40,7 +43,7 @@ body {
 }
 #sidebar li a {
   font-family: 300i;
-  font-size: 16px;
+  font-size: 20px;
   text-align: left;
   padding-left: 36px;
 }
@@ -48,6 +51,45 @@ body {
 hr {
   margin-left: 36px;
   margin-right: 36px;
+}
+
+.workspace {
+  width: 60vw;
+  height: 70vh;
+  border: 1px solid #fafafa;
+  margin-left: 12vw;
+  margin-top: 15vh;
+  background-color: #fff5f5;
+  border-radius: 4px;
+  -moz-box-shadow: 0px 0px 100px 0px #cfcfcf;
+  /*hor-length shadodow-start-point shadow-depth darkness */
+  -webkit-box-shadow: 0px 0px 100px 0px #cfcfcf;
+  box-shadow: 0px 0px 100px 0px #cfcfcf;
+}
+
+input, textarea {
+  width: 24vw;
+  height: 100px;
+  background-color: inherit;
+  font-size: 20px;
+  padding-top: 48px;
+  resize: none !important;
+  border-left: none !important;
+  border-right: none !important;
+  border-top: none !important;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+textarea:focus, input:focus {
+  outline: none;
+}
+
+.first {
+  margin-top: 5.3125vh;
+}
+
+textarea {
+  padding-top: 56px;
 }
 
 /*# sourceMappingURL=style.css.map */
