@@ -11,6 +11,8 @@ body {
   /* Internet Explorer/Edge */
   user-select: none;
   /* Non-prefixed */
+  overflow: hidden;
+  /*hide scrollbar*/
   background-color: #f0e6e6;
   color: black;
 }
@@ -28,8 +30,7 @@ body {
 }
 #sidebar h1 {
   text-align: center;
-  font-size: 6vw;
-  text-shadow: black;
+  font-size: 4vw;
 }
 #sidebar ul {
   padding: 0px;
@@ -38,12 +39,12 @@ body {
 #sidebar li {
   text-decoration: none;
   list-style: none;
-  padding: 16px 0;
+  padding: 8px 0;
   /*left bottom top right */
 }
 #sidebar li a {
   font-family: 300i;
-  font-size: 20px;
+  font-size: 16px;
   text-align: left;
   padding-left: 36px;
 }
@@ -66,13 +67,17 @@ hr {
   -webkit-box-shadow: 0px 0px 100px 0px #cfcfcf;
   box-shadow: 0px 0px 100px 0px #cfcfcf;
 }
+.workspace .button {
+  margin-left: 6vw;
+  margin-top: -12vh;
+}
 
 input, textarea {
   width: 24vw;
-  height: 100px;
+  height: 75px;
   background-color: inherit;
-  font-size: 20px;
-  padding-top: 48px;
+  font-size: 16px;
+  padding-top: 36px;
   resize: none !important;
   border-left: none !important;
   border-right: none !important;
@@ -85,11 +90,48 @@ textarea:focus, input:focus {
 }
 
 .first {
-  margin-top: 5.3125vh;
+  margin-top: 3.984375vh;
 }
 
 textarea {
-  padding-top: 56px;
+  height: 16vh;
+  padding-top: 36px;
+}
+
+.btn {
+  line-height: 6vh;
+  height: 8vh;
+  min-width: 16vw;
+  max-width: 16vw;
+  text-align: center;
+  cursor: pointer;
+  color: #fff5f5;
+  transition: all 0.3s;
+  content: "";
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  background-color: #ffd2eb;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-color: #ffd2eb;
+}
+
+::-webkit-scrollbar-track {
+  overflow: hidden;
+}
+
+::-webkit-scrollbar {
+  overflow: hidden;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  overflow: hidden;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  overflow: hidden;
 }
 
 /*# sourceMappingURL=style.css.map */
