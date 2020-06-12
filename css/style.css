@@ -39,7 +39,7 @@ body {
 #sidebar li {
   text-decoration: none;
   list-style: none;
-  padding: 8px 0;
+  padding: 1vh 0;
   /*left bottom top right */
 }
 #sidebar li a {
@@ -74,10 +74,10 @@ hr {
 
 input, textarea {
   width: 24vw;
-  height: 75px;
+  height: 10vh;
   background-color: inherit;
   font-size: 16px;
-  padding-top: 36px;
+  padding-top: 6vh;
   resize: none !important;
   border-left: none !important;
   border-right: none !important;
@@ -94,8 +94,8 @@ textarea:focus, input:focus {
 }
 
 textarea {
-  height: 16vh;
-  padding-top: 36px;
+  height: 18vh;
+  padding-top: 6vh;
 }
 
 .btn {

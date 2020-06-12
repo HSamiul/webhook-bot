@@ -43,7 +43,7 @@ body {
     text-decoration: none;
     list-style: none;
  
-    padding: 8px 0; /*left bottom top right */
+    padding: 1vh 0; /*left bottom top right */
 
     a {
       font-family: 300i;
@@ -84,10 +84,10 @@ hr {
 input, textarea {
   
   width: 24vw;
-  height: 75px;
+  height: 10vh;
   background-color: inherit;
   font-size: 16px;
-  padding-top: 36px;
+  padding-top: 6vh;
   //margin-top: 21.25vh;
 
   resize: none !important;
@@ -106,8 +106,8 @@ textarea:focus, input:focus{
 }
 
 textarea {
-  height: 16vh;
-  padding-top: 36px;
+  height: 18vh;
+  padding-top: 6vh;
 }
 
 .btn {
