@@ -29,30 +29,33 @@
             <li><a>DIY</a></li>
           </ul>
         </div>
+        <div id="themeToggle">
+        <button id="themeToggleBtn" class="btn btn-dark" onclick="themeToggle()">🌙</button>
+      </div>
       </nav>
 
       <form>
         <div class="workspace form-group" style="text-align: center;">
           <div class="form-row first">
             <div class="form-group col-md-6">
-              <input id="title" placeholder="Item">
+              <input id="item" placeholder="Item">
             </div>
           </div>
           <div class="form-row">
             <div class="form-group col-md-6">
-              <input id="netChange" placeholder="Retail">
+              <input id="retail" placeholder="Retail">
             </div>
           </div>
           <div class="form-row">
             <div class="form-group col-md-6">
-              <input id="time" placeholder="Resell">
+              <input id="resell" placeholder="Resell">
             </div>
           </div>
           <div class="form-row">
             <div class="form-group col-md-6">
-              <textarea placeholder="Description"></textarea>
+              <textarea id="description" placeholder="Description"></textarea>
             </div>
-            <div class="form-group col-md-6 btn button" onclick="sendWebhook()">
+            <div class="form-group col-md-6 submit button" onclick="sendWebhook()">
               <span>Send webhook</span>
             </div>
           </div>
@@ -70,5 +73,6 @@
     
     <!-- Optional JavaScript -->
     <script src="info.js"></script>
+    <script src="themeToggle.js"></script>
   </body>
 </html>

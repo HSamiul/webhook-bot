@@ -3,16 +3,16 @@ function sendWebhook() {
     request.open("POST", "https://discordapp.com/api/webhooks/717110992319807609/Ti2dttH61I52Lt2Qxjhg_LJmmJo8Fs_HnOhJNOKVTCELxqVQhocltIY1K93DU5fF0gUU")
     request.setRequestHeader('Content-type', 'application/json');
 
-    myTitle = document.getElementById("title").value
-    myNetChange = document.getElementById("netChange").value
-    myTime = document.getElementById("time").value
+    myItem = document.getElementById("item").value
+    myRetail = document.getElementById("retail").value
+    myResell = document.getElementById("resell").value
+    myDescription    = document.getElementById("description").value
     //myOView = document.getElementById("oView").value
     //myPView = document.getElementById("pView").value
 
     var myEmbed = {
         color: hexToDecimal("#e986f0"),
-        title: myTitle,
-        timestamp: myTime,
+        title: myItem,
 
         thumbnail: {
             url: "https://i.imgur.com/riCKWwy.png"
@@ -20,14 +20,24 @@ function sendWebhook() {
 
         fields: [
             {
-                name: "Net Gain/Loss",
-                value: myNetChange
+                name: "Retail",
+                value: myRetail
+            },
+
+            {
+                name: "Resell",
+                value: myResell
+            },
+
+            {
+                name: "Description",
+                value: myDescription
             }
         ],        
         
         footer: {
-            icon_url: "https://i.imgur.com/riCKWwy.png",
-            text: "Finance tracking"
+            icon_url: "",
+            text: "F&F"
         }
     }
 

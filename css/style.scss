@@ -1,5 +1,5 @@
 
-$font-primary: "Roboto", sans-serif;
+$-primary: "Roboto", sans-serif;
 $body-bg: rgb(240, 230, 230);
 $sidebar-bg: rgb(255, 210, 235);
 $text: black;
@@ -16,6 +16,8 @@ body {
   
   background-color: $body-bg;
   color: $text;
+  transition: all 0.4s;
+
 }
 
 #sidebar {
@@ -24,6 +26,7 @@ body {
   min-width: 16vw;
   max-width: 16vw;
   min-height: 100vh;
+  transition: all 0.4s;
 
   -moz-box-shadow: $shadow; /*hor-length shadodow-start-point shadow-depth darkness */
   -webkit-box-shadow: $shadow;
@@ -63,6 +66,7 @@ hr {
 }
 
 .workspace {
+
   width: 60vw;
   height: 70vh;
   border: 1px solid rgb(250, 250, 250);
@@ -74,6 +78,8 @@ hr {
   -moz-box-shadow: $shadow; /*hor-length shadodow-start-point shadow-depth darkness */
   -webkit-box-shadow: $shadow;
   box-shadow: $shadow;
+
+  transition: all 0.4s;
 
   .button {
     margin-left: 6vw;
@@ -110,25 +116,36 @@ textarea {
   padding-top: 6vh;
 }
 
-.btn {
-  line-height: 6vh;
+.submit {
+  line-height: 7.5vh;
   height: 8vh;
   min-width: 16vw;
   max-width: 16vw;
-	text-align: center;
+	vertical-align: middle;
   cursor: pointer;
-  
+  background-color: $sidebar-bg;
   color: rgb(255, 245, 245);
+  border-radius: 4px;
 	transition: all 0.3s;
   
   content: '';
-	border-top-width: 1px;
-  border-bottom-width: 1px;
-  background-color: $sidebar-bg;
-	border-top-style: solid;
-	border-bottom-style: solid;
+  border: none;
 	border-color: $sidebar-bg;
 }
+
+#themeToggle {
+  
+  display: flex;
+  justify-content: center;
+  margin-top: 26vh;
+
+}
+
+#themeToggleBtn {
+  padding-left: 6.5vw;
+  padding-right: 6.5vw;
+}
+
 ::-webkit-scrollbar-track {
   overflow: hidden;
 }
@@ -146,3 +163,4 @@ textarea {
 ::-webkit-scrollbar-thumb {
   overflow: hidden;
 }
+
