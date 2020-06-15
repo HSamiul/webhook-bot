@@ -1,6 +1,6 @@
 function sendWebhook() {
     var request = new XMLHttpRequest();
-    request.open("POST", "https://discordapp.com/api/webhooks/717110992319807609/Ti2dttH61I52Lt2Qxjhg_LJmmJo8Fs_HnOhJNOKVTCELxqVQhocltIY1K93DU5fF0gUU")
+    request.open("POST", "https://discordapp.com/api/webhooks/721876186120192070/h6o9prkUNU1AygIsaVbzUi_6QHfroEyMP8sH0wGe_LD1ETjcPcyk-yM49hEHiiny1ZzV")
     request.setRequestHeader('Content-type', 'application/json');
 
     myItem = document.getElementById("item").value
